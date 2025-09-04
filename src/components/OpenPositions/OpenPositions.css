@@ -1,0 +1,178 @@
+.open-positions-container {
+  background-color: #1a1d22;
+  border: 1px solid #2e3238;
+  border-radius: 4px;
+  color: #d1d4dc;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.open-positions-header {
+  align-items: center;
+  border-bottom: 1px solid #2e3238;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.open-positions-header h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.no-positions {
+  align-items: center;
+  color: #848e9c;
+  display: flex;
+  font-size: 14px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+.positions-table {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+}
+
+.positions-table-header {
+  background-color: #2a2e39;
+  border-bottom: 1px solid #2e3238;
+  color: #848e9c;
+  display: flex;
+  font-size: 11px;
+  padding: 8px 10px;
+  position: sticky;
+  top: 0;
+}
+
+.positions-table-body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.position-row {
+  border-bottom: 1px solid #2e3238;
+  display: flex;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+.position-row:hover {
+  background-color: rgba(46, 50, 56, 0.5);
+}
+
+.symbol-col {
+  flex: 1;
+  text-align: left;
+}
+
+.side-col {
+  flex: 1;
+  text-align: left;
+}
+
+.side-col.long {
+  color: #2ed573; /* Зеленый для лонгов */
+}
+
+.side-col.short {
+  color: #ec407a; /* Красный для шортов */
+}
+
+.size-col {
+  flex: 1;
+  text-align: right;
+}
+
+.entry-price-col {
+  flex: 1;
+  text-align: right;
+}
+
+.mark-price-col {
+  flex: 1;
+  text-align: right;
+}
+
+.pnl-col {
+  flex: 1;
+  text-align: right;
+}
+
+.pnl-percent-col {
+  flex: 1;
+  text-align: right;
+}
+
+.profit {
+  color: #2ed573; /* Зеленый для прибыли */
+}
+
+.loss {
+  color: #ec407a; /* Красный для убытка */
+}
+
+.actions-col {
+  display: flex;
+  flex: 1.5;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.close-position-btn,
+.tp-sl-btn {
+  background-color: #2a2e39;
+  border: none;
+  border-radius: 2px;
+  color: #d1d4dc;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+.close-position-btn {
+  background-color: rgba(236, 64, 122, 0.2);
+}
+
+.close-position-btn:hover {
+  background-color: rgba(236, 64, 122, 0.4);
+}
+
+.tp-sl-btn:hover {
+  background-color: #3a3f4c;
+}
+
+.positions-summary {
+  background-color: #2a2e39;
+  border-top: 1px solid #2e3238;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+}
+
+.summary-label {
+  color: #848e9c;
+}
+
+.summary-value {
+  font-weight: 500;
+}

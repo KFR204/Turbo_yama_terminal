@@ -1,0 +1,112 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121417;
+  color: #d1d4dc;
+}
+
+.app-header {
+  background-color: #1a1d22;
+  padding: 10px 20px;
+  border-bottom: 1px solid #2e3238;
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1d4dc;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.chart-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-chart-area {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 200px); /* Вычитаем высоту блока с позициями */
+}
+
+.positions-section {
+  height: 200px;
+  padding: 0;
+  border-top: 1px solid #2e3238;
+  overflow-y: auto;
+  flex-shrink: 0; /* Предотвращает сжатие блока с позициями */
+}
+
+.side-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #2e3238;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.trading-controls {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.order-book-section {
+  flex: 1;
+  padding: 0;
+  border-bottom: 1px solid #2e3238;
+  overflow-y: auto;
+  min-height: 300px;
+}
+
+.trade-panel-section {
+  flex: 1;
+  padding: 0;
+  overflow-y: auto;
+  min-height: 300px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+  
+  .side-panel {
+    border-left: none;
+    border-top: 1px solid #2e3238;
+    max-width: 100%;
+    min-width: auto;
+  }
+  
+  .chart-container {
+    flex: 1;
+  }
+  
+  .trading-controls {
+    flex-direction: column;
+  }
+}

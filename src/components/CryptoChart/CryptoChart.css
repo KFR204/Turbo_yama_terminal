@@ -1,0 +1,199 @@
+.crypto-chart {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #1e2126;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1a1d22;
+  border-bottom: 1px solid #2e3238;
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chart-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #26a69a;
+  padding: 4px 8px;
+  background-color: rgba(38, 166, 154, 0.1);
+  border-radius: 4px;
+}
+
+.chart-controls {
+  display: flex;
+  padding: 8px 10px;
+  background-color: #1a1d22;
+  border-bottom: 1px solid #2e3238;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.interval-selector {
+  display: flex;
+  gap: 4px;
+}
+
+.interval-button {
+  background-color: #2e3238;
+  border: none;
+  color: #d1d4dc;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.interval-button:hover {
+  background-color: #3a3f46;
+}
+
+.interval-button.active {
+  background-color: #4c525e;
+  font-weight: 600;
+}
+
+.chart-container {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+}
+
+/* Стили для элементов управления уровнями цен */
+.price-level-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.percent-input {
+  background-color: #2e3238;
+  border: 1px solid #3a3f46;
+  color: #d1d4dc;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 60px;
+}
+
+/* Стили для селектора цвета */
+.color-selector {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.selected {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+.add-level-button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-level-button:hover {
+  background-color: #1976D2;
+}
+
+.clear-levels-button {
+  background-color: #757575;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clear-levels-button:hover {
+  background-color: #616161;
+}
+
+.price-levels-list {
+  padding: 10px;
+  background-color: #1a1d22;
+  border-bottom: 1px solid #2e3238;
+}
+
+.price-levels-list h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #d1d4dc;
+}
+
+.price-levels-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.price-levels-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: #2e3238;
+  padding: 4px 8px 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.level-info {
+  margin-right: 8px;
+}
+
+.remove-level-button {
+  background-color: transparent;
+  border: none;
+  color: #d1d4dc;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.remove-level-button:hover {
+  background-color: rgba(239, 83, 80, 0.3);
+  color: #ef5350;
+}
